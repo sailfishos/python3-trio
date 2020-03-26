@@ -1,0 +1,3 @@
+[submodule "trio"]
+	path = trio
+	url = https://git.sailfishos.org/mirror/trio.git
