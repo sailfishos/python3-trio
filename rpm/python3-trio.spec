@@ -35,3 +35,6 @@ python3 ./setup.py install --skip-build --root %{buildroot}
 %defattr(-,root,root,-)
 %{python3_sitearch}/trio
 %{python3_sitearch}/trio-*.egg-info
+%exclude %{python3_sitearch}/trio/tests
+%exclude %{python3_sitearch}/trio/testing
+%exclude %{python3_sitearch}/trio/_core/tests
