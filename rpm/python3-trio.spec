@@ -31,8 +31,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{python3_sitearch}/trio
-%{python3_sitearch}/trio-*.egg-info
-%exclude %{python3_sitearch}/trio/tests
-%exclude %{python3_sitearch}/trio/testing
-%exclude %{python3_sitearch}/trio/_core/tests
+%{python3_sitelib}/trio
+%{python3_sitelib}/trio-*.egg-info
+%exclude %{python3_sitelib}/trio/tests
+%exclude %{python3_sitelib}/trio/testing
+%exclude %{python3_sitelib}/trio/_core/tests
