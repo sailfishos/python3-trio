@@ -1,9 +1,9 @@
 Name:       python3-trio
 Summary:    Trio is a friendly Python library for async concurrency and I/O
-Version:    0.13.0
+Version:    0.20.0
 Release:    1
 License:    MIT or ASL 2.0
-URL:        https://pypi.org/project/trio/
+URL:        https://github.com/sailfishos/python3-trio
 BuildArch:  noarch
 Source0:    %{name}-%{version}.tar.bz2
 BuildRequires:  python3-devel
@@ -26,11 +26,9 @@ Requires:       python3-sortedcontainers
 %py3_build
 
 %install
-rm -rf %{buildroot}
 %py3_install
 
 %files
-%defattr(-,root,root,-)
 %{python3_sitelib}/trio
 %{python3_sitelib}/trio-*.egg-info
 %exclude %{python3_sitelib}/trio/tests
